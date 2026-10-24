@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <div class="logo">SR</div>
+
+            <div>
+                <h1>Student Registration</h1>
+                <p>Complete your profile to begin your academic journey</p>
+            </div>
+
+        </header>
+
+
+        <form>
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <span>01</span>
+                    <div>
+                        <h2>Personal Information</h2>
+                        <p>Enter your basic information</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Full Name</label>
+
+                        <input type="text"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+
+                    <div class="field">
+                        <label>Father's Name</label>
+
+                        <input type="text"
+                            placeholder="Enter father's name"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Email</label>
+
+                        <input type="email"
+                            placeholder="example@email.com"
+                            required>
+                    </div>
+
+
+                    <div class="field">
+                        <label>Phone Number</label>
+
+                        <input type="tel"
+                            placeholder="+92 300 1234567"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Password</label>
+
+                        <input type="password"
+                            placeholder="Create password"
+                            required>
+                    </div>
+
+
+                    <div class="field">
+                        <label>Confirm Password</label>
+
+                        <input type="password"
+                            placeholder="Confirm password"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Date of Birth</label>
+
+                        <input type="date">
+                    </div>
+
+
+                    <div class="field">
+                        <label>Age</label>
+
+                        <input type="number"
+                            placeholder="Enter your age">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- GENDER -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span>02</span>
+
+                    <div>
+                        <h2>Gender</h2>
+                        <p>Select your gender</p>
+                    </div>
+
+                </div>
+
+
+                <div class="options">
+
+                    <label>
+                        <input type="radio"
+                            name="gender"
+                            value="male">
+
+                        <span>Male</span>
+                    </label>
+
+
+                    <label>
+                        <input type="radio"
+                            name="gender"
+                            value="female">
+
+                        <span>Female</span>
+                    </label>
+
+
+                    <label>
+                        <input type="radio"
+                            name="gender"
+                            value="other">
+
+                        <span>Other</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- DEPARTMENT -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span>03</span>
+
+                    <div>
+                        <h2>Department</h2>
+                        <p>Choose your department</p>
+                    </div>
+
+                </div>
+
+
+                <select required>
+
+                    <option value="">Select Department</option>
+
+                    <option>BSCS</option>
+
+                    <option>BSIT</option>
+
+                    <option>BSSE</option>
+
+                    <option>BBA</option>
+
+                    <option>B.Com</option>
+
+                </select>
+
+            </section>
+
+
+            <!-- SKILLS -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span>04</span>
+
+                    <div>
+                        <h2>Skills</h2>
+                        <p>Select the skills you have</p>
+                    </div>
+
+                </div>
+
+
+                <div class="skills">
+
+                    <label>
+                        <input type="checkbox">
+                        <span>HTML</span>
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox">
+                        <span>CSS</span>
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox">
+                        <span>JavaScript</span>
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Python</span>
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Java</span>
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox">
+                        <span>C++</span>
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox">
+                        <span>SQL</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- UPLOAD -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span>05</span>
+
+                    <div>
+                        <h2>Upload Documents</h2>
+                        <p>Upload your profile picture and resume</p>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="field">
+
+                        <label>Profile Picture</label>
+
+                        <input type="file"
+                            accept="image/*">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Resume (PDF)</label>
+
+                        <input type="file"
+                            accept=".pdf">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ADDRESS AND COLOR -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span>06</span>
+
+                    <div>
+                        <h2>Additional Information</h2>
+                        <p>Complete your profile</p>
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Address</label>
+
+                    <textarea
+                        placeholder="Enter your complete address"></textarea>
+
+                </div>
+
+
+                <div class="color-field">
+
+                    <label>Favorite Color</label>
+
+                    <input type="color">
+
+                </div>
+
+            </section>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <input type="reset"
+                    value="Reset">
+
+
+                <input type="submit"
+                    value="Submit Registration →">
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
